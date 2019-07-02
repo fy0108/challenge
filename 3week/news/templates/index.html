@@ -1,0 +1,9 @@
+{% macro data_content(data) %}
+	<div>
+		{% for key, value in data.items() %}
+			<p> {{ '{}:{}'.format(key,value) }} </p>
+		{% endfor %}
+	</div>
+{% endmacro %}
+
+<div> {{ data_content(data) }} </div>
